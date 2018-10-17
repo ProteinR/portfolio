@@ -1,0 +1,270 @@
+@dark: #3E454C;
+@white: #fafafa;
+@blue: #2185C5;
+@lightBlue: #7ECEFD;
+@red: #FF7F66;
+
+
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Thin), url("../font/roboto/Roboto-Thin.eot");
+    src: url("../font/roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../font/roboto/Roboto-Thin.woff2") format("woff2"), url("../font/roboto/Roboto-Thin.woff") format("woff"), url("../font/roboto/Roboto-Thin.ttf") format("truetype");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Light), url("../font/roboto/Roboto-Light.eot");
+    src: url("../font/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../font/roboto/Roboto-Light.woff2") format("woff2"), url("../font/roboto/Roboto-Light.woff") format("woff"), url("../font/roboto/Roboto-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local(Roboto Regular), url("../font/roboto/Roboto-Regular.eot");
+    src: url("../font/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../font/roboto/Roboto-Regular.woff2") format("woff2"), url("../font/roboto/Roboto-Regular.woff") format("woff"), url("../font/roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/roboto/Roboto-Medium.eot");
+    src: url("../font/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../font/roboto/Roboto-Medium.woff2") format("woff2"), url("../font/roboto/Roboto-Medium.woff") format("woff"), url("../font/roboto/Roboto-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/roboto/Roboto-Bold.eot");
+    src: url("../font/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../font/roboto/Roboto-Bold.woff2") format("woff2"), url("../font/roboto/Roboto-Bold.woff") format("woff"), url("../font/roboto/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+.h1-responsive {
+    font-size: 150%;
+}
+
+.h2-responsive {
+    font-size: 145%;
+}
+
+.h3-responsive {
+    font-size: 135%;
+}
+
+.h4-responsive {
+    font-size: 135%;
+}
+
+.h5-responsive {
+    font-size: 135%;
+}
+
+@media (min-width: 576px) {
+    .h1-responsive {
+        font-size: 170%;
+    }
+
+    .h2-responsive {
+        font-size: 140%;
+    }
+
+    .h3-responsive {
+        font-size: 125%;
+    }
+
+    .h4-responsive {
+        font-size: 125%;
+    }
+
+    .h5-responsive {
+        font-size: 125%;
+    }
+}
+
+@media (min-width: 768px) {
+    .h1-responsive {
+        font-size: 200%;
+    }
+
+    .h2-responsive {
+        font-size: 170%;
+    }
+
+    .h3-responsive {
+        font-size: 140%;
+    }
+
+    .h4-responsive {
+        font-size: 125%;
+    }
+
+    .h5-responsive {
+        font-size: 125%;
+    }
+}
+
+@media (min-width: 992px) {
+    .h1-responsive {
+        font-size: 200%;
+    }
+
+    .h2-responsive {
+        font-size: 170%;
+    }
+
+    .h3-responsive {
+        font-size: 140%;
+    }
+
+    .h4-responsive {
+        font-size: 125%;
+    }
+
+    .h5-responsive {
+        font-size: 125%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .h1-responsive {
+        font-size: 250%;
+    }
+
+    .h2-responsive {
+        font-size: 200%;
+    }
+
+    .h3-responsive {
+        font-size: 170%;
+    }
+
+    .h4-responsive {
+        font-size: 140%;
+    }
+
+    .h5-responsive {
+        font-size: 125%;
+    }
+}
+
+
+body {
+    background-color: @white;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #3E454C;
+    border-bottom: 1px solid #e3e3e3;
+
+    .container {
+        height: 100%;
+
+        .row {
+            height: 100%;
+
+            .brand {
+                height: 100%;
+                display: flex;
+                color: @white;
+            }
+
+            span {
+                align-self: center;
+            }
+
+
+            .main-menu {
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+
+                ul {
+                    margin-bottom: 0;
+                    height: 100%;
+                    display: flex;
+                    align-items: stretch;
+
+                    li {
+                        display: flex;
+                        padding: 0 20px;
+
+                        &:hover {
+                            background-color: @white;
+                            cursor: pointer;
+                            transition: all 0.5sec ease;
+
+                            > a {
+                                color: @dark;
+                            }
+
+                        }
+
+                        a {
+                            align-self: center;
+                            text-decoration: none;
+                            color: @white;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+section {
+    padding: 40px 0;
+}
+
+.about {
+    .contact {
+        .contact-title {
+            font-weight: 500;
+        }
+    }
+
+    .photo {
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        background-color: @red;
+
+        p {
+            color: @white;
+        }
+    }
+
+    .contact-buttons {
+        padding-top: 20px;
+
+        .contact {
+            //            width: 150px;
+            //            height: 50px;
+            padding: 15px;
+            text-align: center;
+            background-color: @blue;
+            display: inline-block;
+            color: @white;
+            user-select: none;
+            cursor: pointer;
+            //            text-transform: uppercase;
+        }
+    }
+}
