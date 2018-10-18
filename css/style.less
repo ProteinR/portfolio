@@ -1,4 +1,5 @@
 @dark: #3E454C;
+@darkRGB: rgb(62, 69, 76, 0.5);
 @white: #fafafa;
 @blue: #2185C5;
 @lightBlue: #7ECEFD;
@@ -64,6 +65,12 @@ h6 {
 
 .h3-responsive {
     font-size: 135%;
+    font-weight: 350;
+
+    span {
+        border-bottom: 1px solid #3e454c4a;
+
+    }
 }
 
 .h4-responsive {
@@ -85,6 +92,12 @@ h6 {
 
     .h3-responsive {
         font-size: 125%;
+        font-weight: 350;
+
+        span {
+            border-bottom: 1px solid #3e454c4a;
+
+        }
     }
 
     .h4-responsive {
@@ -103,10 +116,18 @@ h6 {
 
     .h2-responsive {
         font-size: 170%;
+        font-weight: 500;
     }
 
     .h3-responsive {
         font-size: 140%;
+        font-weight: 350;
+
+        span {
+            border-bottom: 1px solid #3e454c4a;
+
+        }
+
     }
 
     .h4-responsive {
@@ -129,6 +150,12 @@ h6 {
 
     .h3-responsive {
         font-size: 140%;
+        font-weight: 350;
+
+        span {
+            border-bottom: 1px solid #3e454c4a;
+
+        }
     }
 
     .h4-responsive {
@@ -151,6 +178,12 @@ h6 {
 
     .h3-responsive {
         font-size: 170%;
+        font-weight: 350;
+
+        span {
+            border-bottom: 1px solid #3e454c4a;
+
+        }
     }
 
     .h4-responsive {
@@ -231,6 +264,7 @@ header {
 
 section {
     padding: 40px 0;
+    border-top: 1px solid #e3e3e3;
 }
 
 .about {
@@ -254,17 +288,74 @@ section {
     .contact-buttons {
         padding-top: 20px;
 
-        .contact {
-            //            width: 150px;
-            //            height: 50px;
+        .button {
             padding: 15px;
+            margin-right: 20px;
+            min-width: 170px;
             text-align: center;
             background-color: @blue;
             display: inline-block;
             color: @white;
             user-select: none;
             cursor: pointer;
-            //            text-transform: uppercase;
+
+            .contact-me {
+
+                :hover {}
+            }
+        }
+    }
+}
+
+.education {
+
+    .speciality {
+        margin-right: 10px;
+        float: left;
+
+    }
+
+    .short-name {
+        padding-top: 6px;
+        opacity: 0.8;
+        //        margin-bottom: 0;
+    }
+
+    .year {
+        opacity: 0.6;
+        //        margin: 10px;
+    }
+}
+
+.portfolio {
+    .categories {
+        height: 50px;
+
+        ul {
+            height: 100%;
+            display: flex;
+
+            li {
+                display: flex;
+                padding: 0 15px;
+
+                &:hover {
+                    background-color: #f0f0f0;
+                    cursor: pointer;
+                    transition: all 0.5sec ease;
+
+                    > a {
+                        color: @dark;
+                    }
+
+                }
+
+                a {
+                    align-self: center;
+                    text-decoration: none;
+                    color: @dark;
+                }
+            }
         }
     }
 }
