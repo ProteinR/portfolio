@@ -198,7 +198,7 @@ header .container .row .main-menu ul li a {
 }
 section {
   padding: 40px 0;
-  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
 }
 .about .contact .contact-title {
   font-weight: 500;
@@ -239,6 +239,7 @@ section {
 }
 .portfolio .categories {
   height: 50px;
+  margin-bottom: 15px;
 }
 .portfolio .categories ul {
   height: 100%;
@@ -260,4 +261,39 @@ section {
   align-self: center;
   text-decoration: none;
   color: #3e454c;
+}
+.portfolio .project-card {
+  overflow: hidden;
+  height: auto;
+  margin-bottom: 35px;
+}
+.portfolio .project-card .img {
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+.portfolio .project-card .img img {
+  transition: all 0.5s ease;
+}
+.portfolio .project-card .img:hover a img {
+  transform: scale(1.2);
+}
+.portfolio .project-card .title {
+  margin-top: 15px;
+}
+.portfolio .project-card .title a {
+  border-bottom: 1px solid #3e454c4a;
+  color: #3e454c;
+  text-decoration: none;
+}
+.contact-section .contacts input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.contact-section .text textarea {
+  width: 100%;
 }

@@ -264,7 +264,7 @@ header {
 
 section {
     padding: 40px 0;
-    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
 }
 
 .about {
@@ -330,6 +330,7 @@ section {
 .portfolio {
     .categories {
         height: 50px;
+        margin-bottom: 15px;
 
         ul {
             height: 100%;
@@ -356,6 +357,75 @@ section {
                     color: @dark;
                 }
             }
+        }
+    }
+
+    //    @media (max-width: 990px) {
+    //        .portfolio-cards {
+    //            display: flex;
+    //            justify-content: center;
+    //
+    //        }
+    //    }
+
+    .project-card {
+        overflow: hidden;
+        height: auto;
+        margin-bottom: 35px;
+
+
+        .img {
+            width: 100%;
+            height: auto;
+            transition: all 0.5s ease;
+            overflow: hidden;
+            margin-bottom: 5px;
+            border-radius: 3px;
+
+
+            img {
+                transition: all 0.5s ease;
+
+            }
+
+            &:hover {
+
+                a {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+        }
+
+        .title {
+            margin-top: 15px;
+
+
+            a {
+                border-bottom: 1px solid #3e454c4a;
+                color: @dark;
+                text-decoration: none;
+            }
+
+        }
+    }
+}
+
+.contact-section {
+    .contacts {
+
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .text {
+        textarea {
+            width: 100%;
         }
     }
 }
