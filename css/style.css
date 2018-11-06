@@ -200,6 +200,17 @@ section {
   padding: 40px 0;
   border-bottom: 1px solid #e3e3e3;
 }
+@media (max-width: 768px) {
+  .about .row {
+    flex-flow: wrap;
+  }
+  .about .row .about-me {
+    order: 2;
+  }
+  .about .row .photo-block {
+    order: 1;
+  }
+}
 .about .contact .contact-title {
   font-weight: 500;
 }
